@@ -17,4 +17,13 @@ steps:
 
 - script: |
     # npm install
-  displayName: 'npm install and build'
+  displayName: 'npm install'
+
+- task: SynopsysSecurityScan@1
+  inputs:
+    scanType: 'blackduck'
+    bridge_blackduck_url: 'https://expressonboarding.app.blackduck.com/'
+    bridge_blackduck_token: 'YjhjMjlhYzQtZDNiNy00NDlkLTlkM2ItOTNmMzdmYmQzMzRhOjAxNmNjMzdkLTUyNGUtNDNjYi05NDRkLTgyYmRjZDQwOTJlZg=='
+    bridge_blackduck_scan_full: true
+    bridge_blackduck_automation_prcomment: true
+    bridge_blackduck_fixpr_enabled: true
