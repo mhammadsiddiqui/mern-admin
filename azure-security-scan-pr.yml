@@ -23,6 +23,10 @@ steps:
   displayName: 'npm install'
 
 - task: SynopsysSecurityScan@1
+  env:
+    DETECT_PROJECT_NAME: MernAdmin
+    DETECT_PROJECT_VERSION_NAME: AzureSecurityScan
+    DETECT_CODE_LOCATION_NAME: MernAdmin_AzureSecurityScan
   inputs:
     scanType: 'blackduck'
     bridge_blackduck_url: '$(BD_Express)'
@@ -30,6 +34,6 @@ steps:
     azure_token: '$(Azure_Access_Token)'
     #bridge_blackduck_automation_prcomment: true
     #bridge_blackduck_fixpr_enabled: true
-    bridge_blackduck_fixpr_useUpgradeGuidance: 'SHORT_TERM, LONG_TERM'
-    bridge_blackduck_fixpr_filter_severities: 'CRITICAL, HIGH'
+    bridge_blackduck_fixpr_useUpgradeGuidance: 'SHORT_TERM,LONG_TERM'
+    bridge_blackduck_fixpr_filter_severities: 'CRITICAL,HIGH'
     #bridge_blackduck_fixpr_maxCount: '5'
