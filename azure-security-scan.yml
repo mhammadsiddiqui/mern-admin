@@ -29,17 +29,3 @@ steps:
     bridge_blackduck_url: 'https://expressonboarding.app.blackduck.com/'
     bridge_blackduck_token: 'YjhjMjlhYzQtZDNiNy00NDlkLTlkM2ItOTNmMzdmYmQzMzRhOjAxNmNjMzdkLTUyNGUtNDNjYi05NDRkLTgyYmRjZDQwOTJlZg=='
     bridge_blackduck_scan_full: true
-    # bridge_blackduck_automation_prcomment: true
-    # bridge_blackduck_fixpr_enabled: true
-
-- task: SynopsysSecurityScan@1
-  inputs:
-    scanType: 'blackduck'
-    bridge_blackduck_url: '$(BD_URL)'
-    bridge_blackduck_token: '$(BD_TOKEN)'
-    bridge_blackduck_automation_prcomment: true
-    bridge_blackduck_fixpr_enabled: true
-    bridge_blackduck_fixpr_useUpgradeGuidance: 'SHORT_TERM, LONG_TERM'
-    bridge_blackduck_fixpr_filter_severities: 'CRITICAL, HIGH'
-    bridge_blackduck_fixpr_maxCount: '5'
-    azure_token: '$(Azure_Token)'
