@@ -28,4 +28,5 @@ steps:
       --detect.code.location.name=MernAdmin_Azure-Devops
       --blackduck.trust.cert=true
       --detect.blackduck.scan.mode=RAPID
+      ----detect.force.success=true
     DetectVersion: 'latest'
