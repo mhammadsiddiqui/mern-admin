@@ -20,6 +20,10 @@ steps:
   displayName: 'npm install'
 
 - task: SynopsysSecurityScan@1
+  env:
+    DETECT_PROJECT_NAME: MernAdmin
+    DETECT_PROJECT_VERSION_NAME: AzureSecurityScan
+    DETECT_CODE_LOCATION_NAME: MernAdmin_AzureSecurityScan
   inputs:
     scanType: 'blackduck'
     bridge_blackduck_url: 'https://expressonboarding.app.blackduck.com/'
