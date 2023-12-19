@@ -21,7 +21,7 @@ steps:
   
 - task: SynopsysDetectTask@9
   inputs:
-    BlackDuckService: 'Blackduck-Azure'
+    BlackDuckService: 'Black Duck'
     DetectArguments: |
       --detect.project.name=MernAdmin
       --detect.project.version.name=Azure-Devops
