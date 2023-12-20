@@ -31,7 +31,7 @@ steps:
     scanType: 'blackduck'
     bridge_blackduck_url: '$(BD_Express)'
     bridge_blackduck_token: '$(BD_Express_Token)'
-    bridge_blackduck_scan_full: false
+    bridge_blackduck_scan_full: true
     bridge_blackduck_automation_prcomment: false
     azure_token: '$(Azure_Access_Token)'
     bridge_blackduck_fixpr_enabled: false
