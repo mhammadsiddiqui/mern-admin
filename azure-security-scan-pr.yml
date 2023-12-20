@@ -37,3 +37,4 @@ steps:
     bridge_blackduck_fixpr_enabled: false
     bridge_blackduck_fixpr_useUpgradeGuidance: 'SHORT_TERM,LONG_TERM'
     bridge_blackduck_fixpr_filter_severities: 'CRITICAL,HIGH'
+    bridge_blackduck_scan_failure_severities: 'NONE'
